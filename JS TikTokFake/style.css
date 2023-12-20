@@ -1,0 +1,46 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Para esconder o conteúdo que ultrapassa a altura da tela */
+    flex-direction: column; /* Empilha as páginas verticalmente */
+}
+
+.wrap {
+    height: 80vh;
+    width: 30vw;
+    background-color: blue;
+    display: flex;
+    border-radius: 5%;
+    padding: 1vh 1vw;
+    transition: transform 0.5s ease; /* Adiciona transição para a propriedade transform */
+    margin-bottom: 10px; /* Adiciona um espaçamento entre as páginas */
+    justify-content: center;
+}
+
+.wrap.move-up {
+    transform: translateY(-100%);
+}
+
+.wrap.move-down {
+    transform: translateY(100%);
+}
+
+#like {
+    display: none;
+    align-items: flex-end;
+}
+
+.title {
+    display: flex;
+    position: absolute;
+}
